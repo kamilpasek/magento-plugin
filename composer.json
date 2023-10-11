@@ -1,0 +1,21 @@
+{
+    "name": "ipresso/magento-integration",
+    "type": "magento2-module",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ipresso\\MagentoIntegration\\": ""
+        },
+        "files": [ "registration.php" ]
+    },
+    "authors": [
+        {
+            "name": "kamilpasek",
+            "email": "kamil.pasek@ipresso.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.4"
+    }
+}
