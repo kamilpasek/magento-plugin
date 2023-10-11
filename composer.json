@@ -2,6 +2,7 @@
     "name": "ipresso/magento-integration",
     "type": "magento2-module",
     "license": "MIT",
+    "version": "1.0.0",
     "autoload": {
         "psr-4": {
             "Ipresso\\MagentoIntegration\\": ""
