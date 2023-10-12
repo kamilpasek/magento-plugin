@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
     <route url="/ipresso/v1/customers" method="GET">
-        <service class="Ipresso\MagentoIntegration\Controller\TestController" method="execute"/>
+        <service class="Ipresso\MagentoIntegration\Api\CustomerApiInterface" method="getCustomers"/>
         <resources>
-            <resource ref="Ipresso_MagentoIntegration::getCustomers" />
+            <resource ref="self" />
         </resources>
     </route>
 </routes>
