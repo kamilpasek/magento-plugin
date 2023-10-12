@@ -5,6 +5,7 @@ declare(strict_types=1);
 
 namespace Ipresso\MagentoIntegration\Observer;
 
+use Magento\Framework\Event\ManagerInterface;
 use Magento\Framework\Event\Observer;
 use Magento\Framework\Event\ObserverInterface;
 use Psr\Log\LoggerInterface;
