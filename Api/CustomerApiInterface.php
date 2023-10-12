@@ -7,7 +7,7 @@ namespace Ipresso\MagentoIntegration\Api;
 interface CustomerApiInterface
 {
     /**
-     * @return int[]
+     * @return string
      */
-    public function getCustomers(): array;
+    public function getCustomers(): string;
 }
