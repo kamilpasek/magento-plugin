@@ -7,17 +7,22 @@ namespace Ipresso\MagentoIntegration\Observer;
 
 use Magento\Framework\Event\Observer;
 use Magento\Framework\Event\ObserverInterface;
+use Psr\Log\LoggerInterface;
 
 class AppObserver implements ObserverInterface
 {
-    public function __construct()
+    private LoggerInterface $logger;
+
+    public function __construct(
+        LoggerInterface $logger
+    )
     {
-        // Observer initialization code...
-        // You can use dependency injection to get any class this observer may need.
+        $this->logger = $logger;
     }
 
     public function execute(Observer $observer)
     {
-        // Observer execution code...
+        $product = $observer->getData('product');
+        $this->logger->debug('product', ['product' => json_encode($product)]);
     }
 }
