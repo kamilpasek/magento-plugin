@@ -3,7 +3,7 @@
     <route url="/ipresso/v1/customers" method="GET">
         <service class="Ipresso\MagentoIntegration\Controller\CustomersController" method="execute"/>
         <resources>
-            <resource>Ipresso_MagentoIntegration::getCustomers</resource>
+            <resource ref="Ipresso_MagentoIntegration::getCustomers" />
         </resources>
     </route>
 </routes>
