@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
-        <add id="Ipresso_MagentIntegration::integration" title="iPresso" translate="title" module="Ipresso_MagentIntegration" parent="Magento_Backend::content" sortOrder="50" dependsOnModule="Ipresso_MagentIntegration" resource="Ipresso_MagentIntegration::integration"/>
+        <add id="Ipresso_MagentIntegration::integration" title="iPresso" translate="title" module="Ipresso_MagentIntegration" parent="Magento_Backend::marketing" sortOrder="50" dependsOnModule="Ipresso_MagentIntegration" resource="Ipresso_MagentIntegration::integration"/>
         <add id="Ipresso_MagentIntegration::integration_config" title="Configuration" translate="title" module="Ipresso_MagentIntegration" parent="Ipresso_MagentIntegration::integration" sortOrder="10" dependsOnModule="Ipresso_MagentIntegration" action="ipresso/configuration" resource="Ipresso_MagentIntegration::integration"/>
     </menu>
 </config>
