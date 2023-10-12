@@ -10,7 +10,7 @@ use Ipresso\MagentoIntegration\Api\CustomerApiInterface;
 class CustomerModel implements CustomerApiInterface
 {
 
-    public function getCustomers(): string
+    public function getCustomers($params): string
     {
         return json_encode([1, 2, 3]);
     }

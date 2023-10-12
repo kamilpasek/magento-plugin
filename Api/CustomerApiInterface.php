@@ -7,7 +7,8 @@ namespace Ipresso\MagentoIntegration\Api;
 interface CustomerApiInterface
 {
     /**
+     * @param string|null $params
      * @return string
      */
-    public function getCustomers(): string;
+    public function getCustomers($params): string;
 }
