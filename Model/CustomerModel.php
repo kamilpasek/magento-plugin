@@ -3,11 +3,11 @@
 declare(strict_types=1);
 
 
-namespace Ipresso\MagentoIntegration\Controller;
+namespace Ipresso\MagentoIntegration\Model;
 
 use Ipresso\MagentoIntegration\Api\CustomerApiInterface;
 
-class CustomerController implements CustomerApiInterface
+class CustomerModel implements CustomerApiInterface
 {
 
     public function getCustomers(): string

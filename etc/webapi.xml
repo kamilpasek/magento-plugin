@@ -3,7 +3,7 @@
     <route url="/ipresso/v1/customers" method="GET">
         <service class="Ipresso\MagentoIntegration\Api\CustomerApiInterface" method="getCustomers"/>
         <resources>
-            <resource ref="self" />
+            <resource ref="anonymous"/>
         </resources>
     </route>
 </routes>
