@@ -6,7 +6,7 @@
         </action>
     </referenceBlock>
     <body>
-        <referenceContainer name="content">
+        <referenceContainer name="marketing">
             <block class="Magento\Backend\Block\Template" template="Ipresso_MagentoIntegration::config.phtml"/>
         </referenceContainer>
     </body>
