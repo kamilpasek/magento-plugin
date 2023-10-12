@@ -9,4 +9,5 @@
             <argument name="config" xsi:type="object">moduleConfig</argument>
         </arguments>
     </type>
+    <preference for="Ipresso\MagentoIntegration\Api\CustomerApiInterface" type="Ipresso\MagentoIntegration\Controller\CustomerController" />
 </config>

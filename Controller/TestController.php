@@ -10,7 +10,7 @@ use Magento\Framework\App\Action\HttpGetActionInterface;
 use Magento\Framework\App\ActionInterface;
 use Magento\Framework\Exception\AuthorizationException;
 
-class CustomersController implements ActionInterface,
+class TestController implements ActionInterface,
     HttpGetActionInterface {
     private UserContextInterface $userContext;
 
