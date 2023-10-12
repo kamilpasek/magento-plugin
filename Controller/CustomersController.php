@@ -24,7 +24,7 @@ class CustomersController implements ActionInterface,
             throw new AuthorizationException(__('Please log in'));
         }
         // code
-
+        return json_encode(['success' => true]);
     }
 
 }
