@@ -23,6 +23,6 @@ class AppObserver implements ObserverInterface
     public function execute(Observer $observer)
     {
         $product = $observer->getData('product');
-        $this->logger->debug('product', ['product' => json_encode($product)]);
+        $this->logger->debug('app product', ['product' => serialize($product)]);
     }
 }
