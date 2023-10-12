@@ -17,7 +17,7 @@ use Magento\Framework\View\Result\PageFactory;
  */
 class Index extends Action implements HttpGetActionInterface
 {
-    const MENU_ID = 'Ipresso_MagentIntegration::integration_config';
+    const MENU_ID = 'Ipresso_MagentoIntegration::integration_config';
 
     /**
      * @var PageFactory
