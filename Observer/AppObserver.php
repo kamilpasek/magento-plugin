@@ -24,8 +24,14 @@ class AppObserver implements ObserverInterface
 
     public function execute(Observer $observer)
     {
-        /** @var Product $product */
+        /** @var \Magento\Catalog\Model\Product $product */
         $product = $observer->getData('product');
-        $this->logger->debug('app product', ['product' => get_class($product)]);
+        $this->logger->debug('app product', [
+            'product' => get_class($product),
+            'name' => $product->getName(),
+            'id' => $product->getId(),
+            'price' => $product->getPrice(),
+            'category' => $product->getCategory(),
+        ]);
     }
 }
