@@ -5,6 +5,7 @@ declare(strict_types=1);
 
 namespace Ipresso\MagentoIntegration\Observer;
 
+use Magento\Catalog\Model\Product;
 use Magento\Framework\Event\ManagerInterface;
 use Magento\Framework\Event\Observer;
 use Magento\Framework\Event\ObserverInterface;
@@ -23,7 +24,8 @@ class AppObserver implements ObserverInterface
 
     public function execute(Observer $observer)
     {
+        /** @var Product $product */
         $product = $observer->getData('product');
-        $this->logger->debug('app product', ['product' => print_r($product, true)]);
+        $this->logger->debug('app product', ['product' => get_class($product)]);
     }
 }
